@@ -1,1 +1,67 @@
-# fake-pay-prank12
+# <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InstantCash Payout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: auto;
+            padding: 40px;
+            border-radius: 15px;
+            width: 50%;
+            max-width: 500px;
+        }
+        .loading-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .progress {
+            width: 0%;
+            height: 20px;
+            background-color: limegreen;
+            border-radius: 5px;
+            animation: load 5s forwards;
+        }
+        @keyframes load {
+            to {
+                width: 100%;
+            }
+        }
+        .final-message {
+            display: none;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💸 InstantCash Payment Portal</h1>
+        <p>Verifying your identity and preparing your 1000€ transfer...</p>
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="final-message" id="finalMessage">
+            <h2>🎉 Gotcha! This was just a fun prank — no real money here 😄</h2>
+            <p>Send this to your friends and see if they fall for it too!</p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('finalMessage').style.display = 'block';
+        }, 5000);
+    </script>
+</body>
+</html>
+fake-pay-prank12
